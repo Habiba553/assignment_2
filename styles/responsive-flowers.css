@@ -153,11 +153,6 @@ body{
   font-weight: bold;
   transition: background-color 0.3s;
 }
-@media  screen and (max-width: 576px) {
-  .container{
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 
 .plants-lover-section{
   justify-content: space-between;
@@ -169,7 +164,6 @@ body{
   margin-bottom: 150px;
   flex-shrink: 0;
   height: 462px;
-  
 }
 .plants-lover-img{
   position: relative;
@@ -193,6 +187,12 @@ body{
   height: 286px;
   flex-shrink: 0;
 }
+.plant-section{
+  display: flex;
+  justify-content:center;
+  width: 1140px;
+  margin-top: 100px;
+}
 .plant-lover-title{
  font-size: 50px;
  font-style: normal;
@@ -213,8 +213,12 @@ body{
   width: 540px;
   height: 597px;
   flex-shrink: 0;
+  display: grid;
+  justify-content: center;
 }
-
+.latest-section{
+  display: grid;
+}
 .latest-title{
   font-size: 40px;
   font-weight: 700;
@@ -228,6 +232,14 @@ body{
   padding: 40px;
   max-width: 1200px;
   margin: auto;
+  margin-left: 160px;
+  margin-right: 160px;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto; */
 }
 
 .left-column {
@@ -318,7 +330,6 @@ body{
   margin-top: 10px;
 }
 .subscribe input {
- 
   display: flex;
   width: 644px;
   height: 50px;
@@ -393,10 +404,85 @@ footer {
   display: flex;
   /* flex-wrap: wrap; */
   gap: 24px;
-  
 }
 
 .footer img{
   width: 10%;
   gap: 32px;
 }
+
+@media  screen and (max-width: 576px) {
+    .subscribe{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width:100%;
+      margin-left: 35px;
+      margin-right: 35px; 
+      flex-direction: row; 
+    }
+  .subscribe input{
+   text-align: center;
+  }  
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-lin{
+    display: none;
+  }
+   .container2{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .banner-part{
+    flex-direction: column-reverse;
+  }
+  .container2{
+    margin:0px;
+  }
+  .latest-section{
+    flex-direction: column;
+  }
+  .badge-image{
+    display: none;
+  }
+  .banner-description{
+    text-align: center;
+  }
+  .latest-description{
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  /* .plant-section{
+    flex-direction: column;
+  }  */
+  .plant-lover{
+    flex-direction: column;
+  }
+  .plant-description{
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  
+  .footer-links{
+  flex-direction: column;
+  margin-left: 0px;
+  }
+  .footer-link{
+    margin-left: 0px;
+  }
+  .footer-content{
+    flex-direction: column;
+  }
+  
+  .join-title{
+    text-align: center;
+    align-items: center;
+    font-size: 1em;
+    margin-left: 200px;
+    margin-right: 150px;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  }
