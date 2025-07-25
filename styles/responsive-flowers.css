@@ -446,7 +446,7 @@ footer {
   .subscribe input{
    /* text-align: center; */
    flex: 1;
-   min-width: 0; /* Prevents overflow from long text */
+   min-width: 0; 
   }  
 
   .subscribe button {
@@ -479,10 +479,21 @@ footer {
   .banner-description{
     text-align: left;
   }
+  .banner h1{
+    font-size: 24px;
+    font-weight: 700;
+  }
   .latest-description{
     margin-left: 20px;
     margin-right: 1px;
-    text-align: left;
+    text-align: center;
+  }
+  .latest-description br{
+    display: none;
+  }
+  .plant h1{
+    font-size: 24px;
+    font-weight: 700;
   }
   .plant-section{
     flex-direction: column;
@@ -510,9 +521,10 @@ footer {
   margin-bottom: 2rem;
  } 
   .plant-lover-title{
-  font-size: 1.8rem;
+  font-size: 24px;
   margin-bottom: 1rem;
   text-align: left;
+  margin-left: 1px;
  }
 
  .plant-lover-title br{
@@ -522,33 +534,33 @@ footer {
  .plant-text{
   padding: 0px;
  }
- /*
- .plants-lover-section{
-  display: flex;
-  flex-wrap: wrap;
- } */
+ 
   .latest-section h1{
-    /* margin-top: 2rem;
-    padding-top: 1em; */
-    /* display: block;
-    clear: both;          make sure it starts on a new line */
-    /* margin-top: 1rem;
-    font-size: 1.5rem;
-    margin-bottom: 15px; */
     margin-top: 150px;
     text-align: center;
     display: block;
     font-size: 24px;
   }
   .latest-section{
-    margin-top: 150px;     /* separate latest deals section from above */
+    margin-top: 150px;     
     padding-top: 1rem;
   }
   .plant-description{
-    margin-left: 35px;
-    margin-right: 10px;
-    text-align:left;
+    /* margin-left: 30px;
+    margin-right: 0px;
+    text-align: center; */
+    margin-left: 40px;
+    margin-right: 1px;
+    text-align: center;
+    width: 393px;
+    flex-direction: column; 
+    align-items: center;
   }
+
+  .plant-description br{
+    display: none;
+  }
+
   .footer-links{
   flex-direction: column;
   margin-left: 0px;
@@ -559,8 +571,13 @@ footer {
   .footer-content{
     flex-direction: column;
   }
+  .footer-social {
+    align-items: center;
+    justify-content:flex-start;
+  }
   .join-section{
     margin: 0px;
+    height: 275px;
   }
   .join-title{
     text-align: center;
