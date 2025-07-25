@@ -66,11 +66,9 @@ body{
   text-align: left;
 }
 .banner-title{
-  font-size: 40px;
+  font-size: 65px;
   margin-bottom: 20px;
   line-height: 1.2;
-  /* justify-content: center; */
-  /* flex-direction: column; */
 }
 .banner-description{
   font-size: 16px;
@@ -198,6 +196,7 @@ body{
  font-style: normal;
  font-weight: 700;
  line-height: normal;
+ margin-bottom: 5px;
 }
 
 .plants-lover-section li{
@@ -215,6 +214,9 @@ body{
   flex-shrink: 0;
   display: grid;
   justify-content: center;
+}
+.plant-lover ul li{
+  margin-bottom: 15px;
 }
 .latest-section{
   display: grid;
@@ -326,11 +328,6 @@ body{
   /* gap: 23px; */
 }
 .subscribe {
-  /* display: flex;
-  justify-content: center;
-  gap: none;
-  margin-top: 10px; */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -340,14 +337,7 @@ body{
 
 }
 .subscribe input {
-  /* display: flex;
-  width: 644px;
-  height: 50px;
-  padding: 1px 20px;
-  align-items: center;
-  gap: 10px;
-  border: none; */
-  flex: 1; /* Allow input to take remaining space */
+  flex: 1; 
   height: 50px;
   padding: 0 20px;
   border: none;
@@ -355,17 +345,6 @@ body{
   box-sizing: border-box;
 }
 .subscribe button {
-  /* background: #E95A08;
-  color: white;
-  display: flex;
-  width: 186px;
-  height: 50px;
-  padding: 26px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border: none; */
-
   height: 50px;
   padding: 0 20px;
   background-color: #E95A08;
@@ -374,7 +353,7 @@ body{
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
-  white-space: nowrap; /* Prevents wrapping */
+  white-space: nowrap; 
 
 }
 
@@ -526,9 +505,9 @@ footer {
  } 
   .plant-lover-title{
   font-size: 24px;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   text-align: left;
-  margin-left: 1px;
+  margin-left: 0px;
  }
 
  .plant-lover-title br{
