@@ -440,17 +440,8 @@ footer {
 
 @media  screen and (max-width: 576px) {
     .subscribe{
-      /* align-items: center;
-      justify-content: center;
-      text-align: center;
-      width:100%;
-      margin-left: 35px;
-      margin-right: 35px; 
-      flex-direction: row;  */
-
-      flex-direction: row; /* Stay horizontal */
-      padding: 0 15px; /* Add horizontal breathing room */
-
+     flex-direction: row; 
+      padding: 0 0px; 
     }
   .subscribe input{
    /* text-align: center; */
@@ -521,8 +512,13 @@ footer {
   .plant-lover-title{
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  white-space:nowrap;
+  text-align: left;
  }
+
+ .plant-lover-title br{
+  display: none;
+ }
+
  .plant-text{
   padding: 0px;
  }
